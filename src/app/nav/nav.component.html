@@ -1,7 +1,7 @@
 <nav class="main-nav">
 	<ul class="menu-wrapper">
-		
-		<li *ngFor="let item of menuItems" class="menu-item">
+		<li routerLink="/" class="menu-item">Home</li>
+		<li *ngFor="let item of menuItems" class="menu-item" routerLink="{{ item.page }}">
 			{{ item.title }}
 		</li>
 	</ul>
