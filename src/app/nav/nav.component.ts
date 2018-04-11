@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   menuItems = [
-    { title: 'Style', page: 'style' },
-    { title: 'Options', page: 'options' },
-    { title: 'Feedback', page: 'feedback' }
+    { title: 'Home', page: '', icon: 'bandcamp'},
+    { title: 'Style', page: 'style', icon: 'bandcamp'},
+    { title: 'Options', page: 'options', icon: 'address-book' },
+    { title: 'Feedback', page: 'feedback', icon: 'archive' }
   ];
   
   constructor() {

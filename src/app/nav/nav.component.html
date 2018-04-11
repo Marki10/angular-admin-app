@@ -1,8 +1,8 @@
 <nav class="main-nav">
+	<img src="#" alt="" class="logo">
 	<ul class="menu-wrapper">
-		<li routerLink="/" class="menu-item">Home</li>
 		<li *ngFor="let item of menuItems" class="menu-item" routerLink="{{ item.page }}">
-			{{ item.title }}
+			<fa [name]=item.icon animation="pulse" class="menu-item__icon"></fa>{{ item.title }}
 		</li>
 	</ul>
 </nav>

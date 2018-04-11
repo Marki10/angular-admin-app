@@ -1,3 +1,14 @@
+.logo {
+    display: block;
+    min-height: 240px;
+    margin: 10px;
+    background: url('../../assets/logo.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .main-nav {
     border-right: 2px solid #dedede;
     background: #fefefe;
@@ -18,10 +29,14 @@
     box-sizing: border-box;
     padding: 15px;
     width: 100%;
-
+    
     &:hover {
         cursor: pointer;
         background: #dedede;
+    }
+
+    &__icon {
+        margin-right: 10px;
     }
 
     &--selected {

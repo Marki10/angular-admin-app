@@ -2,9 +2,10 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
  
 import { StyleComponent }   from './style/style.component';
+import { WelcomeComponent }   from './welcome/welcome.component';
  
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', component: WelcomeComponent },
   { path: 'style', component: StyleComponent }
 ];
  
