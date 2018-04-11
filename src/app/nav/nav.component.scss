@@ -1,22 +1,25 @@
+@import '../../colors.scss';
+
 .logo {
     display: block;
-    min-height: 240px;
+    min-height: 150px;
     margin: 10px;
-    background: url('../../assets/logo.svg');
+    background: url('../../assets/logo.svg') #fff;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    border: 1px solid #ddd;
+    border: 1px solid $background-light;
     border-radius: 5px;
 }
 
 .main-nav {
-    border-right: 2px solid #dedede;
-    background: #fefefe;
+    border-right: 2px solid $background-light;
+    background: $background;
     position: absolute;
     left: 0;
     top: 0;
     width: 300px;
     height: 100%;
+    color: $menu-font-color;
 }
 
 .menu-wrapper {
@@ -25,14 +28,14 @@
 
 .menu-item {
     list-style-type: none;
-    border: 1px solid #eee;
     box-sizing: border-box;
     padding: 15px;
     width: 100%;
     
     &:hover {
         cursor: pointer;
-        background: #dedede;
+        background: $background-light;
+        color: $menu-font-color-hover;
     }
 
     &__icon {
@@ -40,6 +43,6 @@
     }
 
     &--selected {
-        background: #dedede;
+        background: $background-light;
     }
 }

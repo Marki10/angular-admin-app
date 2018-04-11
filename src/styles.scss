@@ -1,0 +1,8 @@
+@import './colors.scss';
+
+body {
+    background: $background-light;
+    color: $font-color;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
