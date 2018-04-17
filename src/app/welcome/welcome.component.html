@@ -1,3 +1,40 @@
-<h2 class="main-content__title">
-  Welcome to admin!
-</h2>
+<section class="section-container">
+  <div class="form-group">
+    <h3 class="form-group__group-title">Welcome to admin!</h3>
+  </div>
+</section>
+<div class="three-columns-section-container">
+  <div class="three-columns-section-container__left">
+    <h5>Earning Report</h5>
+  </div>
+  <div class="three-columns-section-container__middle">
+    <h5>Used apps</h5>
+  </div>
+  <div class="three-columns-section-container__right">
+    <h5>Usage</h5>
+    <div class="progress-bar">
+      <div class="progress-bar__count">344</div>
+      <div class="progress-bar__label">Foobar</div>
+      <div class="progress-bar__bar" data-value="20"></div>
+    </div>
+  </div>
+</div>
+<section class="section-container">
+  <h5>Earning Report</h5>
+  <table class="earning-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Earnings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let earning of earnings">
+          <td>{{ earning.name }}<img class="earning-table__picture" [src]="earning.picture"></td>
+          <td><span class="earning-table__status earning-table__status--rising">{{ earning.status }}</span></td>
+          <td>{{ earning.earning }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

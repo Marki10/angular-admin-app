@@ -10,6 +10,7 @@ export class NavComponent implements OnInit {
     { title: 'Home', page: '', icon: 'bandcamp'},
     { title: 'Style', page: 'style', icon: 'bandcamp'},
     { title: 'Options', page: 'options', icon: 'address-book' },
+    { title: 'Usage', page: 'usage', icon: 'address-book' },
     { title: 'Feedback', page: 'feedback', icon: 'archive' }
   ];
   

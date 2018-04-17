@@ -1,5 +1,39 @@
 <section class="section-container">
-    <div class="form-group">
-      <h3 class="form-group__group-title">Graps</h3>
-    </div>
+  <div class="form-group">
+    <h3 class="form-group__group-title">Statistic</h3>
+  </div>
+  <canvas
+      baseChart
+      [chartType]="'line'"
+      [datasets]="charts.chart1.chartData"
+      [labels]="charts.chart1.chartLabels"
+      [options]="charts.chart1.chartOptions"
+      [legend]="true"
+      (chartClick)="onChartClick($event)">
+  </canvas>
+</section>
+
+<section class="two-columns-section-container">
+  <div class="two-columns-section-container__left">
+    <canvas
+      baseChart
+      [chartType]="'pie'"
+      [datasets]="charts.chart2.chartData"
+      [labels]="charts.chart2.chartLabels"
+      [options]="charts.chart2.chartOptions"
+      [legend]="true"
+      (chartClick)="onChartClick($event)">
+  </canvas>
+  </div>
+  <div class="two-columns-section-container__right">
+    <canvas
+      baseChart
+      [chartType]="'doughnut'"
+      [datasets]="charts.chart3.chartData"
+      [labels]="charts.chart3.chartLabels"
+      [options]="charts.chart3.chartOptions"
+      [legend]="true"
+      (chartClick)="onChartClick($event)">
+    </canvas>
+  </div>
 </section>

@@ -3,5 +3,19 @@
         {
             "title": "Demo"
         }
+    ],
+    "earnings": [
+        {
+            "name": "Lorem Ipsum",
+            "status": "Rising",
+            "earning": 1000,
+            "picture": "../../assets/images/profile/man.png"
+        },
+        {
+            "name": "Lorem Ipsum",
+            "status": "Rising",
+            "earning": 2000,
+            "picture": "../../assets/images/profile/businessman.png"
+        }
     ]
 }
