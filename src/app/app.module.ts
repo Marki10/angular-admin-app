@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
-import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';

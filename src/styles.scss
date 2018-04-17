@@ -1,8 +1,50 @@
 @import './colors.scss';
+@import './form.scss';
 
 body {
     background: $background-light;
     color: $font-color;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+
+.section-container {
+    background: $background;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.two-column-section-container {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__right,
+    &__left {
+        background: $background;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    &__right {
+        margin-left: 1.2rem;
+    }
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    margin: -9999px;
+    visibility: hidden;
+}
+
+/*******\
+* Reset *
+\*******/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
