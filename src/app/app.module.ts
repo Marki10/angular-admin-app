@@ -8,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { StyleComponent } from './style/style.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MainComponent,
     NavComponent,
     StyleComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,

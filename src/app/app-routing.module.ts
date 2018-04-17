@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
  
 import { StyleComponent }   from './style/style.component';
 import { WelcomeComponent }   from './welcome/welcome.component';
+import { FeedbackComponent }   from './feedback/feedback.component';
  
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
-  { path: 'style', component: StyleComponent }
+  { path: 'style', component: StyleComponent },
+  { path: 'feedback', component: FeedbackComponent }
 ];
  
 @NgModule({
