@@ -12,10 +12,28 @@
             "picture": "../../assets/images/profile/man.png"
         },
         {
-            "name": "Lorem Ipsum",
-            "status": "Rising",
+            "name": "Site Admin",
+            "status": "New",
             "earning": 2000,
             "picture": "../../assets/images/profile/businessman.png"
+        },
+        {
+            "name": "Lara MacAur",
+            "status": "Veteran",
+            "earning": 10000,
+            "picture": "../../assets/images/profile/user.png"
+        },
+        {
+            "name": "Gut Rafa",
+            "status": "New",
+            "earning": 6330,
+            "picture": "../../assets/images/profile/businessman.png"
+        },
+        {
+            "name": "Ad Sumo Simul",
+            "status": "Rising",
+            "earning": 1330,
+            "picture": "../../assets/images/profile/man.png"
         }
     ]
 }

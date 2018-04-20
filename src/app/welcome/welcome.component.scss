@@ -9,11 +9,19 @@
         &--rising {
             background: $main-aqua;
         }
-    }
 
+        &--new {
+            background: $main-green;
+        }
+
+        &--veteran {
+            background: $main-purple;
+        }
+    }
+    
     &__picture {
         max-width: 4rem;
-        margin-left: 1rem;
+        margin-right: 1rem;
         border-radius: 50%;
     }
 }

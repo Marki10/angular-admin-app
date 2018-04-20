@@ -28,6 +28,7 @@
 .menu-item {
     list-style-type: none;
     box-sizing: border-box;
+    position: relative;
     padding: 15px;
     width: 100%;
     
@@ -43,5 +44,24 @@
 
     &--selected {
         background: $background-light;
+    }
+
+    &__new-count {
+        color: $font-color;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        padding: 0 10px;
+        border-radius: 5px;
+        font-size: .8rem;
+        background: $main-aqua;
+        
+        &--normal {
+            background: $main-orange;
+        }
+        
+        &--hot {
+            background: $main-red;
+        }
     }
 }

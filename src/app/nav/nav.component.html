@@ -2,7 +2,16 @@
 	<img src="#" alt="" class="logo">
 	<ul class="menu-wrapper">
 		<li *ngFor="let item of menuItems" class="menu-item" routerLink="{{ item.page }}">
-			<fa [name]=item.icon animation="pulse" class="menu-item__icon"></fa>{{ item.title }}
+			<fa [name]=item.icon animation="pulse" class="menu-item__icon"></fa>
+			{{ item.title }}
+			<span class="menu-item__new-count"
+				  [ngClass]="{
+					'menu-item__new-count--normal':item.newNotification >= 3,
+					'menu-item__new-count--hot':item.newNotification >= 6
+				  }"
+				  *ngIf="item.newNotification !== 0">
+				{{ item.newNotification }}
+			</span>
 		</li>
 	</ul>
 </nav>

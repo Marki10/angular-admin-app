@@ -1,39 +1,61 @@
-<section class="section-container">
-  <div class="form-group">
-    <h3 class="form-group__group-title">Welcome to admin!</h3>
-  </div>
-</section>
 <div class="three-columns-section-container">
   <div class="three-columns-section-container__left">
-    <h5>Earning Report</h5>
+    <div class="box">
+      <h5 class="box__title">Earning Report <fa name="chart-line" style="color: aqua;"></fa></h5>
+      <div class="box__count">344</div>
+      <div class="box__label">Export</div>
+      <div class="box__progress-bar">
+        <div class="box__progress-bar-filled" style="width: 50%; background: aqua;"></div>  
+      </div>
+    </div>
   </div>
   <div class="three-columns-section-container__middle">
-    <h5>Used apps</h5>
+    <div class="box">
+      <h5 class="box__title">Used apps<fa name="chart-line" style="color: chocolate;"></fa></h5>
+      <div class="box__count">14364</div>
+      <div class="box__label">Users</div>
+      <div class="box__progress-bar">
+        <div class="box__progress-bar-filled" style="width: 70%; background: chocolate;"></div>  
+      </div>
+    </div>
   </div>
   <div class="three-columns-section-container__right">
-    <h5>Usage</h5>
-    <div class="progress-bar">
-      <div class="progress-bar__count">344</div>
-      <div class="progress-bar__label">Foobar</div>
-      <div class="progress-bar__bar" data-value="20"></div>
-    </div>
+      <div class="box">
+        <h5 class="box__title">Usage<fa name="chart-line" style="color: indigo;"></fa></h5>
+        <div class="box__count">99876</div>
+        <div class="box__label">Avarge</div>
+        <div class="box__progress-bar">
+          <div class="box__progress-bar-filled" style="width: 70%; background: indigo;"></div>  
+        </div>
+      </div>
   </div>
 </div>
 <section class="section-container">
-  <h5>Earning Report</h5>
+  <h5>Earning Reports</h5>
   <table class="earning-table">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Name <fa name="chevron-down"></fa></th>
         <th>Status</th>
         <th>Earnings</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let earning of earnings">
-          <td>{{ earning.name }}<img class="earning-table__picture" [src]="earning.picture"></td>
-          <td><span class="earning-table__status earning-table__status--rising">{{ earning.status }}</span></td>
-          <td>{{ earning.earning }}</td>
+          <td><img class="earning-table__picture" [src]="earning.picture">{{ earning.name }}</td>
+          <td>
+            <span 
+              class="earning-table__status"
+              [ngClass]="{
+                'earning-table__status--rising':earning.status === 'Rising',
+                'earning-table__status--veteran':earning.status === 'Veteran',
+                'earning-table__status--new':earning.status === 'New'
+                }"            
+              >
+              {{ earning.status }}
+            </span>
+          </td>
+          <td>{{ earning.earning | currency:"CAD":"symbol-narrow"}}</td>
       </tr>
     </tbody>
   </table>
