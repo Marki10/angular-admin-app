@@ -26,7 +26,7 @@ export class FeedbackComponent implements OnInit  {
         { data: [33, 60, 10], label: 'Lorem' },
         { data: [45, 67], label: 'Ipsum' }
       ],
-      chartLabels: ['January', 'February', 'Mars', 'April']
+      chartLabels: ['First quarter', 'Secound quarter', 'Third quarter', 'Quattro quarter']
     },
     chart3: {
       chartOptions: {
@@ -35,7 +35,7 @@ export class FeedbackComponent implements OnInit  {
       chartData: [
         { data: [33, 60, 10], label: 'Lorem' }
       ],
-      chartLabels: ['January', 'February']
+      chartLabels: ['First quarter', 'Secound quarter']
     }
   };
 

@@ -6,7 +6,6 @@ import { ChartsModule } from 'ng2-charts';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NavComponent } from './nav/nav.component';
-import { StyleComponent } from './style/style.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FeedbackComponent } from './feedback/feedback.component';
@@ -14,6 +13,7 @@ import { UsageComponent } from './usage/usage.component';
 
 import { DataService } from './data.service';
 import { HttpModule } from '@angular/http';
+import { OptionsComponent } from './options/options.component';
 
 
 @NgModule({
@@ -21,10 +21,10 @@ import { HttpModule } from '@angular/http';
     AppComponent,
     MainComponent,
     NavComponent,
-    StyleComponent,
     WelcomeComponent,
     FeedbackComponent,
-    UsageComponent
+    UsageComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,

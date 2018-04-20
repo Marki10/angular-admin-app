@@ -11,7 +11,8 @@
     margin: 2rem 1rem;
 
     &__title {
-        width: 100px;
+        width: 120px;
+        margin-right: 10px;
         font-weight: 700;
         vertical-align: top;
     }
@@ -34,7 +35,7 @@
         font-style: italic;
         color: $menu-font-color;
         display: block;
-        margin-left: 100px;
+        margin-left: 130px;
     }
 
     &__error-text {
