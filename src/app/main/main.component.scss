@@ -5,9 +5,17 @@ header {
     padding: 10px 20px;
     margin-left: 300px;
     color: $main-blue;
+    
+    @media (max-width: 576px) {
+        margin-left: 0;
+    }
 }
 
 .main-content {
     padding: 20px;
     margin-left: 300px;
+    
+    @media (max-width: 576px) {
+        margin-left: 0;
+    }
 }

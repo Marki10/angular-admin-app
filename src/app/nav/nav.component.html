@@ -1,4 +1,4 @@
-<nav class="main-nav">
+<nav class="main-nav" [@toggleMenu]="isShow">
 	<img src="#" alt="" class="logo">
 	<ul class="menu-wrapper">
 		<li *ngFor="let item of menuItems" class="menu-item" routerLink="{{ item.page }}">
@@ -14,4 +14,5 @@
 			</span>
 		</li>
 	</ul>
+	<div class="main-nav__toggle-button" (click)="isShow = (isShow==='show')? 'hide' : 'show'">X</div>
 </nav>

@@ -1,6 +1,9 @@
 <section class="section-container">
   <div class="form-group">
     <h3 class="form-group__group-title">Statistic</h3>
+    <p class="form-group__simple-text">
+      See on olnud tööstuse põhiline proovitekst juba alates 1500. aastatest, mil tundmatu printija võttis hulga suvalist teksti, et teha trükinäidist. Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks. See sai tuntuks 1960. aastatel Letraset'i lehtede väljalaskmisega, ja hiljuti tekstiredaktoritega nagu Aldus PageMaker, mis sisaldavad erinevaid Lorem Ipsumi versioone.
+    </p>
   </div>
   <canvas
       baseChart
@@ -12,8 +15,15 @@
       (chartClick)="onChartClick($event)">
   </canvas>
 </section>
+
 <section class="two-columns-section-container">
   <div class="two-columns-section-container__left">
+    <div class="form-group">
+      <h3 class="form-group__group-title">Virginia</h3>
+      <p class="form-group__simple-text">
+          Vastupidiselt tavaarusaamale, Lorem Ipsum ei ole lihtsalt suvaline tekst. See sai alguse osakesest klassikalisest ladina kirjandusest, mis on pärit aastast 45 eKr, olles seega rohkem kui kaks tuhat aastat vana. Virginia Hampden-Sydney College'i ladina keele professor Richard McClintock otsis Lorem Ipsumi lõigust ühe ebamääraseima ladinakeelse sõna, 'consecteur', ja vaadates läbi sõna viited klassikalises kirjanduses, leidis Lorem Ipsumi vaieldamatu allika. Lorem Ipsum on tulnud Cicero 45 aastat eKr kirjutatud raamatu
+      </p>
+    </div>
     <canvas
       baseChart
       [chartType]="'pie'"
@@ -24,7 +34,11 @@
       (chartClick)="onChartClick($event)">
   </canvas>
   </div>
+
   <div class="two-columns-section-container__right">
+    <div class="form-group">
+      <h3 class="form-group__group-title">Lihtsalt</h3>
+    </div>
     <canvas
       baseChart
       [chartType]="'doughnut'"
